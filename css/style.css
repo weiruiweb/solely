@@ -1,0 +1,161 @@
+/**************导航*****************/
+.navbar{margin:0px;}
+.navbar-nav{float: right;}
+.navbar-nav{
+	height:80px;
+	line-height: 80px;
+	margin:29px 0px;}
+.navbar-nav > li{
+	margin:0px 30px;
+	padding:0px 6px;
+}
+.navbar-nav > li > a{
+	padding:0px;
+}
+.nav > li > a {
+	color:#4a4a4a;
+	font-size:20px;
+	line-height: 80px;
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+}
+.navbar-header a{
+	height:138px;
+	line-height: 138px;}
+.navbar-default .navbar-nav > .active > a{
+	background: none;
+	border-bottom: solid 2px #089fe3;
+	color: #089fe3;}
+.navbar-default .navbar-nav > li > a:hover{ color: #089fe3;}
+.navbar-nav > li > a:before{
+	content:'';
+	position:absolute;
+	display: block;
+	top:100%;
+	left: 0;
+	width: 0px;
+	height: 2px;
+	background:#089fe3;
+	z-index: 10;
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+}
+.navbar-nav > li > a:hover:before{width: 100%;-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;}
+#navbar-collapse{z-index: 999}
+.navbar-collapse .nav li>a:hover:before{width: 100%;}
+
+.top-nav-collapse{
+    background: #fff;
+    z-index: 999999;
+    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+/*****************banner***************/
+#carousel-example-generic {
+    margin-top: 140px;
+}
+
+.bannerTxt1 {
+    font-size: 0.75rem;
+    bottom: 0;
+    top: 25%;
+    animation: fadeInDown-100 1s;
+}
+
+.bannerTxt2 {
+    font-size: 0.3rem;
+    bottom: 0;
+    top: 40%;
+    font-weight: normal;
+    color: #fafcff;
+    font-family: "SimHei";
+    display: block;
+    animation: fadeInDown-100 1s;
+}
+
+.bannerTxt3 {
+    width: 200px;
+    height: 45px;
+    line-height: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #e2b13c;
+    font-size: 22px;
+    color: #fafcff;
+    display: block;
+    margin:0px auto;
+    bottom: 20%;
+    font-weight: normal;
+    animation: fadeLeftQuick 1s;
+}
+/*********************service************************/
+.service {
+    padding: 140px 0px 170px;
+}
+
+.description {
+    text-align: center;
+}
+
+.description h3 {
+    font-size: 44px;
+    color: #606060;
+}
+
+.description p {
+    color: #86878b;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.description_img {
+    width: 173px;
+    height: 192px;line-height: 192px;
+    background: url(../images/service_bg.jpg) no-repeat;
+    background-size:cover;
+    margin:0px auto;
+    text-align: center;
+}
+.description_img img {
+    margin: 30px auto;
+    position: relative;
+    top: 30%;
+}
+
+.description_item {
+    text-align: center;
+    margin: 0px 38px;
+}
+
+.description_sort {
+    margin-top: 105px;
+}
+
+.description_item h4 {
+    font-size: 24px;
+    color: #161616;
+    margin: 40px auto;
+}
+
+.description_item p {
+    font-size: 18px;
+    color: #888;
+    line-height: 34px;
+}
+.service_img{min-height:432px;background: url(../images/service_bg1.jpg) no-repeat;background-size:cover;position: relative;}
+.serviceImg1 {position: absolute;bottom: 50px;left:50%;margin-left: -346px;}
+.serviceImg2{position: absolute;left:29%;top:86px;}
+.serviceImg2 img{width: 85%;}
+.serviceImg3{position: absolute;right: 25%;bottom: 105px;}
+.product .col-md-9,.product .col-md-3,.product .col-xs-12,.product .col-md-8,.product .col-md-4,.product .col-md-6,.product .col-md-12{padding: 0px;}
+.productImg2 .col-md-4{margin-top: 30px;}
+.productImg2 .col-md-8{margin-top: 30px;}
+.product .description{margin-bottom: 110px;margin-top:140px;}
+.product img{width: 100%;height: 100%;}
+.product .col-md-8,.product .col-md-4{padding-right:15px;}
