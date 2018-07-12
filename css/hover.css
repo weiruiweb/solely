@@ -161,11 +161,11 @@ position:relative;
   -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.animation_time_1{animation-delay:.2s}
-.animation_time_2{animation-delay:.5s}
-.animation_time_3{animation-delay:.8s}
-.animation_time_4{animation-delay:1.2s}
-.animation_time_5{animation-delay:1.5s}
+.animation_time_1{animation-delay:.1s}
+.animation_time_2{animation-delay:.3s}
+.animation_time_3{animation-delay:.5s}
+.animation_time_4{animation-delay:.7s}
+.animation_time_5{animation-delay:.9s}
 .ex_img img{transition: all .5s ease-out;
         -webkit-transition: all .5s ease-out;}
 .ex_img:hover img{transform:rotateY(180deg);-webkit-transform:rotateY(180deg);}       
