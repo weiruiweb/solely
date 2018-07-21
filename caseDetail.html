@@ -34,7 +34,7 @@
     	<div class="container">
             <div class="navbar-header">
                
-                	<a href="./index.html"><img src="images/logo.jpg" alt="纯粹科技"/></a>
+                	<a href="index.html"><img src="images/logo.jpg" alt="纯粹科技"/></a>
         
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">切换导航</span>
@@ -45,7 +45,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" >网站首页</a></li>
+                    <li class="active"><a href="index.html" >网站首页</a></li>
                     <li><a href="#">精品案例</a></li>
                     <li><a href="#">新闻中心</a></li>      
                     <li><a href="#">技术博客</a></li>
@@ -253,7 +253,7 @@
 </section>
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript " src="js/bootstrap.js"></script>
-<script src="js/scrollReveal.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
 <script src="js/my.js"></script>
 <script src="js/rem.js"></script>
 <script type="text/javascript">
@@ -262,36 +262,24 @@
         $('.navbar').addClass('top-nav-collapse');
     } else {
         $('.navbar').removeClass('top-nav-collapse');
-    }
+    } 
+});
 
+$(window).load(function() {
+     $('.caseComputer').waypoint(function(direction) {
 
-     var caseComputer = document.getElementById("caseComputer");
-    var caseComputer = caseComputer.offsetTop;
-    if ($(window).scrollTop() > caseComputer-400) {
-
-        $('.caseComputer_left').addClass('serviceLeft');
-         $('.caseComputer_right').addClass('serviceRight');
-
-    } else {
-        $('.caseComputer_left').removeClass('serviceLeft');
-        $('.caseComputer_right').removeClass('serviceRight');
-        
-    }
-
-
-     var caseShow_img = document.getElementById("caseShow_img");
-    var caseShow_img = caseShow_img.offsetTop;
-    if ($(window).scrollTop() > caseShow_img-400) {
-
-        $('.caseShow').addClass('fadeInTop-100');
-         $('.caseComputer_right').addClass('serviceRight');
-
-    } else {
-        $('.caseShow').removeClass('fadeInTop-100');
-        $('.caseComputer_right').removeClass('serviceRight');
-        
-    }
+        if (direction === 'down' && !$(this.element).hasClass('animated')) {
     
+            $('.caseComputer_left').addClass('fadeInLeft animated');
+            $('.caseComputer_right').addClass('fadeInRight animated');
+        }else{
+            $('.caseComputer_left').removeClass('fadeInLeft animated');
+            $('.caseComputer_right').removeClass('fadeInRight animated');
+        }
+    }, {
+        offset: '400px'
+
+    });
 });
 </script>
 </body>
