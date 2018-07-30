@@ -753,7 +753,7 @@
             $('.description_item').removeClass('fadeInDown-300 animated');
         }
     }, {
-        offset: '300px'
+        offset: '200px'
 
     });
      $('#product').waypoint(function(direction) {
@@ -790,6 +790,10 @@
            $('.process_img3').addClass('fadeInDown-100 animated');  
            $('.process_img2').addClass('opacity1 animated');
            $('.process_img1').addClass('fadeInLeft animated');
+        }else{
+             $('.process_img3').removeClass('fadeInDown-100 animated');  
+           $('.process_img2').removeClass('opacity1 animated');
+           $('.process_img1').removeClass('fadeInLeft animated');
         }
     }, {
         offset: '500px'
@@ -831,20 +835,6 @@
 
 
 });
-
-
 </script>
-
-<script type="text/javascript">
-    
-$(function(){
-    var w=$(window).width();
-    if(w<768){
-        $(".tech").removeAttr("data-stellar-background-ratio");;
-        $(".tech").removeAttr("data-stellar-vertical-offset");
-    }
-})
-</script>
-
 </body>
 </html>

@@ -10,6 +10,12 @@ body {
 	position: relative;
 	font-weight:normal;
 }
+@font-face{
+	font-family: "siyuan";
+	src: url('../SourceHanSans-Light/SourceHanSans-Light.otf') format('otf');
+	src: url('../SourceHanSans-Light/SourceHanSans-Light.ttf') format('ttf');
+	src: url('../SourceHanSans-Light/SourceHanSans-Light.woff') format('woff');
+}
 h1,h2,h3,h4,h5,h6,p,ul { 
 	margin: 0;
 	padding: 0;
