@@ -140,7 +140,9 @@ position:relative;
   }
 }
 .fadeInDown-300{
-
+  transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    animation: fadeInDown-300 2s;
 }
 @keyframes fadeInDown-200 {
   0% {
@@ -188,8 +190,5 @@ position:relative;
 }
 .fadeInDown-200{
     animation: fadeInDown-200 1s;
-}
-.fadeInDown-300{
-    animation: fadeInDown-300 1s;
 }
 
